@@ -18,6 +18,17 @@
 		3EC7C2B916B5A2DB0027A1E2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EC7C2B816B5A2DB0027A1E2 /* Default@2x.png */; };
 		3EC7C2BB16B5A2DB0027A1E2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EC7C2BA16B5A2DB0027A1E2 /* Default-568h@2x.png */; };
 		3EC7C2BE16B5A2DB0027A1E2 /* iCameHere.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3EC7C2BC16B5A2DB0027A1E2 /* iCameHere.xcdatamodeld */; };
+		3EC7C2C516B5A3850027A1E2 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EC7C2C416B5A3850027A1E2 /* FacebookSDK.framework */; };
+		3EC7C2C816B5A3B90027A1E2 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3EC7C2C616B5A3B90027A1E2 /* FacebookSDKResources.bundle */; };
+		3EC7C2C916B5A3B90027A1E2 /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3EC7C2C716B5A3B90027A1E2 /* FBUserSettingsViewResources.bundle */; };
+		3EC7C2CB16B5A3FF0027A1E2 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EC7C2CA16B5A3FF0027A1E2 /* Social.framework */; };
+		3EC7C2CD16B5A4040027A1E2 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EC7C2CC16B5A4040027A1E2 /* AdSupport.framework */; };
+		3EC7C2CF16B5A4100027A1E2 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EC7C2CE16B5A4100027A1E2 /* Accounts.framework */; };
+		3EC7C2D116B5A5760027A1E2 /* mainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC7C2D016B5A5760027A1E2 /* mainStoryboard.storyboard */; };
+		3EC7C2D416B5A5C90027A1E2 /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC7C2D316B5A5C90027A1E2 /* loginViewController.m */; };
+		3ED154F316B5E06300653663 /* profileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED154F216B5E06300653663 /* profileViewController.m */; };
+		3ED154F616B5EB3500653663 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED154F516B5EB3500653663 /* CoreLocation.framework */; };
+		3ED154F816B5EB3E00653663 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED154F716B5EB3E00653663 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +47,19 @@
 		3EC7C2B816B5A2DB0027A1E2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3EC7C2BA16B5A2DB0027A1E2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3EC7C2BD16B5A2DB0027A1E2 /* iCameHere.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iCameHere.xcdatamodel; sourceTree = "<group>"; };
+		3EC7C2C416B5A3850027A1E2 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		3EC7C2C616B5A3B90027A1E2 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = ../../../FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle; sourceTree = "<group>"; };
+		3EC7C2C716B5A3B90027A1E2 /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBUserSettingsViewResources.bundle; path = ../../../FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
+		3EC7C2CA16B5A3FF0027A1E2 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		3EC7C2CC16B5A4040027A1E2 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		3EC7C2CE16B5A4100027A1E2 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		3EC7C2D016B5A5760027A1E2 /* mainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = mainStoryboard.storyboard; sourceTree = "<group>"; };
+		3EC7C2D216B5A5C90027A1E2 /* loginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginViewController.h; sourceTree = "<group>"; };
+		3EC7C2D316B5A5C90027A1E2 /* loginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginViewController.m; sourceTree = "<group>"; };
+		3ED154F116B5E06300653663 /* profileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = profileViewController.h; sourceTree = "<group>"; };
+		3ED154F216B5E06300653663 /* profileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = profileViewController.m; sourceTree = "<group>"; };
+		3ED154F516B5EB3500653663 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3ED154F716B5EB3E00653663 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,10 +67,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ED154F816B5EB3E00653663 /* MapKit.framework in Frameworks */,
+				3ED154F616B5EB3500653663 /* CoreLocation.framework in Frameworks */,
+				3EC7C2CF16B5A4100027A1E2 /* Accounts.framework in Frameworks */,
+				3EC7C2CD16B5A4040027A1E2 /* AdSupport.framework in Frameworks */,
+				3EC7C2CB16B5A3FF0027A1E2 /* Social.framework in Frameworks */,
 				3EC7C2A316B5A2DB0027A1E2 /* UIKit.framework in Frameworks */,
 				3EC7C2A516B5A2DB0027A1E2 /* Foundation.framework in Frameworks */,
 				3EC7C2A716B5A2DB0027A1E2 /* CoreGraphics.framework in Frameworks */,
 				3EC7C2A916B5A2DB0027A1E2 /* CoreData.framework in Frameworks */,
+				3EC7C2C516B5A3850027A1E2 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +86,8 @@
 		3EC7C29316B5A2DB0027A1E2 = {
 			isa = PBXGroup;
 			children = (
+				3ED154F716B5EB3E00653663 /* MapKit.framework */,
+				3ED154F516B5EB3500653663 /* CoreLocation.framework */,
 				3EC7C2AA16B5A2DB0027A1E2 /* iCameHere */,
 				3EC7C2A116B5A2DB0027A1E2 /* Frameworks */,
 				3EC7C29F16B5A2DB0027A1E2 /* Products */,
@@ -73,6 +105,12 @@
 		3EC7C2A116B5A2DB0027A1E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3EC7C2CE16B5A4100027A1E2 /* Accounts.framework */,
+				3EC7C2CC16B5A4040027A1E2 /* AdSupport.framework */,
+				3EC7C2CA16B5A3FF0027A1E2 /* Social.framework */,
+				3EC7C2C616B5A3B90027A1E2 /* FacebookSDKResources.bundle */,
+				3EC7C2C716B5A3B90027A1E2 /* FBUserSettingsViewResources.bundle */,
+				3EC7C2C416B5A3850027A1E2 /* FacebookSDK.framework */,
 				3EC7C2A216B5A2DB0027A1E2 /* UIKit.framework */,
 				3EC7C2A416B5A2DB0027A1E2 /* Foundation.framework */,
 				3EC7C2A616B5A2DB0027A1E2 /* CoreGraphics.framework */,
@@ -87,6 +125,11 @@
 				3EC7C2B316B5A2DB0027A1E2 /* AppDelegate.h */,
 				3EC7C2B416B5A2DB0027A1E2 /* AppDelegate.m */,
 				3EC7C2BC16B5A2DB0027A1E2 /* iCameHere.xcdatamodeld */,
+				3EC7C2D016B5A5760027A1E2 /* mainStoryboard.storyboard */,
+				3EC7C2D216B5A5C90027A1E2 /* loginViewController.h */,
+				3EC7C2D316B5A5C90027A1E2 /* loginViewController.m */,
+				3ED154F116B5E06300653663 /* profileViewController.h */,
+				3ED154F216B5E06300653663 /* profileViewController.m */,
 				3EC7C2AB16B5A2DB0027A1E2 /* Supporting Files */,
 			);
 			path = iCameHere;
@@ -161,6 +204,9 @@
 				3EC7C2B716B5A2DB0027A1E2 /* Default.png in Resources */,
 				3EC7C2B916B5A2DB0027A1E2 /* Default@2x.png in Resources */,
 				3EC7C2BB16B5A2DB0027A1E2 /* Default-568h@2x.png in Resources */,
+				3EC7C2C816B5A3B90027A1E2 /* FacebookSDKResources.bundle in Resources */,
+				3EC7C2C916B5A3B90027A1E2 /* FBUserSettingsViewResources.bundle in Resources */,
+				3EC7C2D116B5A5760027A1E2 /* mainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +220,8 @@
 				3EC7C2B116B5A2DB0027A1E2 /* main.m in Sources */,
 				3EC7C2B516B5A2DB0027A1E2 /* AppDelegate.m in Sources */,
 				3EC7C2BE16B5A2DB0027A1E2 /* iCameHere.xcdatamodeld in Sources */,
+				3EC7C2D416B5A5C90027A1E2 /* loginViewController.m in Sources */,
+				3ED154F316B5E06300653663 /* profileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,9 +292,14 @@
 		3EC7C2C216B5A2DB0027A1E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../FacebookSDK\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCameHere/iCameHere-Prefix.pch";
 				INFOPLIST_FILE = "iCameHere/iCameHere-Info.plist";
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -255,9 +308,14 @@
 		3EC7C2C316B5A2DB0027A1E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../FacebookSDK\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCameHere/iCameHere-Prefix.pch";
 				INFOPLIST_FILE = "iCameHere/iCameHere-Info.plist";
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -282,6 +340,7 @@
 				3EC7C2C316B5A2DB0027A1E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

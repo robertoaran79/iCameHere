@@ -13,13 +13,13 @@
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
+@synthesize aiv;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+
+    [FBProfilePictureView class];
+    
     return YES;
 }
 
@@ -145,5 +145,70 @@
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
+
+
+//Facebook Logins Methods
+-(void)sessionStateChanged:(FBSession *)session
+                     state:(FBSessionState)state
+                     error:(NSError *)error{
+    switch (state) {
+        case FBSessionStateOpen:
+            //Insert Here code to treat login return.
+            
+            break;
+        case FBSessionStateClosed:
+            //Insert Here code to treat login return.
+            
+            break;
+        case FBSessionStateClosedLoginFailed:
+            //Insert Here code to treat login return.
+            
+            break;
+            
+        default:
+            break;
+    }
+    
+    if (error) {
+        UIAlertView *alertView = [[UIAlertView alloc]
+                                  initWithTitle:@"Error"
+                                  message:error.description
+                                  delegate:nil
+                                  cancelButtonTitle:@"OK"
+                                  otherButtonTitles:nil];
+        [alertView show];
+    }
+    
+    //Control state of login buttons 
+    UINavigationController *nav = (UINavigationController *)self.window.rootViewController;
+    loginViewController *lvc = (loginViewController *)[[nav viewControllers]objectAtIndex:0];
+    [[lvc showFriendsButton]setHidden:NO];
+    [[lvc loginButton]setTitle:@"Logout" forState:0];
+    [[lvc aiv] removeFromSuperview];
+
+    
+}
+
+-(void)openSession{
+    
+    //Set the permission by the first time
+    NSArray *perms;
+    perms = [NSArray arrayWithObjects:@"user_status", nil];
+    
+    //Use Active Session to use iO6 facebook credentials
+    [FBSession openActiveSessionWithReadPermissions:perms allowLoginUI:YES completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
+        [self sessionStateChanged:[FBSession activeSession] state:status error:error];
+    }];
+    
+}
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
+    return [FBSession.activeSession handleOpenURL:url];
+}
+
 
 @end
